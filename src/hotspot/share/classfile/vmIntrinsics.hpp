@@ -269,6 +269,8 @@ class methodHandle;
                                                                                                                         \
   do_intrinsic(_identityHashCode,         java_lang_System,       identityHashCode_name, object_int_signature,   F_SN)  \
    do_name(     identityHashCode_name,                           "identityHashCode")                                    \
+  do_intrinsic(_currentCompileId,         java_lang_System,       currentCompileId_name, void_int_signature,   F_SN)    \
+   do_name(     currentCompileId_name,                           "currentCompileId")                                    \
   do_intrinsic(_currentTimeMillis,        java_lang_System,       currentTimeMillis_name, void_long_signature,   F_SN)  \
                                                                                                                         \
    do_name(     currentTimeMillis_name,                          "currentTimeMillis")                                   \

@@ -894,6 +894,8 @@ public:
   // Deallocation function for redefine classes or if an error occurs
   void deallocate_contents(ClassLoaderData* loader_data);
 
+  int get_compile_id();
+
   void release_C_heap_structures();
 
   Method* get_new_method() const {

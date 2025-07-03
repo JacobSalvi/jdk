@@ -682,6 +682,14 @@ public final class System {
      */
     @IntrinsicCandidate
     public static native int identityHashCode(Object x);
+    
+    /**
+     * Return the compile id for the current method.
+     * A compile id of -1 indicates that the method is running in the interpreter.
+     * @return the compile_id or -1
+     */
+    @IntrinsicCandidate
+    public static native int currentCompileId();
 
     /**
      * System properties.

@@ -23,3 +23,8 @@ NashornProfile.txt
 /.cproject
 /compile_commands.json
 /.cache
+
+.project
+.settings
+.classpath
+.factorypath

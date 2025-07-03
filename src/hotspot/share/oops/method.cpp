@@ -134,6 +134,16 @@ void Method::deallocate_contents(ClassLoaderData* loader_data) {
   if (code() != nullptr) _code = nullptr;
 }
 
+
+// NOTE: fetch compile_id
+int Method::get_compile_id(){
+  CompiledMethod* c = code();
+  if(c == NULL){
+    return -1;
+  }
+  return c->compile_id();
+}
+
 void Method::release_C_heap_structures() {
   if (method_data()) {
     method_data()->release_C_heap_structures();

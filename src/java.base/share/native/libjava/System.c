@@ -57,6 +57,14 @@ Java_java_lang_System_identityHashCode(JNIEnv *env, jobject this, jobject x)
     return JVM_IHashCode(env, x);
 }
 
+JNIEXPORT jint JNICALL
+Java_java_lang_System_currentCompileId(JNIEnv *env, jclass unused)
+{
+    return JVM_CurrentCompileId(env);
+}
+
+
+
 /* VENDOR, VENDOR_URL, VENDOR_URL_BUG are set in VersionProps.java.template. */
 
 /*

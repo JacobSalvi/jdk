@@ -127,6 +127,7 @@ JVM_GetNextThreadIdOffset
 JVM_GetPermittedSubclasses
 JVM_GetPrimitiveArrayElement
 JVM_GetProperties
+JVM_CurrentCompileId
 JVM_GetProtectionDomain
 JVM_GetRandomSeedForDumping
 JVM_GetRecordComponents
