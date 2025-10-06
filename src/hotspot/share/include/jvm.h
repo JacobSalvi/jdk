@@ -106,6 +106,10 @@ JVM_ArrayCopy(JNIEnv *env, jclass ignored, jobject src, jint src_pos,
 JNIEXPORT jobjectArray JNICALL
 JVM_GetProperties(JNIEnv *env);
 
+
+JNIEXPORT jint JNICALL
+JVM_CurrentCompileId(JNIEnv *env);
+
 /*
  * java.lang.Runtime
  */
